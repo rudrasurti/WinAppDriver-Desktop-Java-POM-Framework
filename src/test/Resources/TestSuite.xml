@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- ~~~~~~~~~~~~~~~~~~~ TEST SUITE ~~~~~~~~~~~~~~~~~~~ -->
+
+<suite name = "ORT Test Suite" verbose = "1">    
+
+    <groups>
+        <run>
+            <include name = "Test" />
+        </run>
+    </groups>
+
+    <parameter name = "application.name" value = "Calculator" />
+    <parameter name = "application.exe" value = "microsoft.windowscalculator_8wekyb3d8bbwe!app" />
+    <parameter name = "device.name" value = "WindowsPC" />
+    <parameter name = "platform.name" value = "Windows" />
+
+    <test name = "StandardPage Tests">
+        <classes>
+            <class name = "labs.vish.automation.Calculator.Tests.StandardPageTests">
+                <methods>
+                    <!-- <include name = "testAdditionOperation" />
+                    <include name = "testSubtractionOperation" /> -->
+                    <!-- <exclude name = "">  -->
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
